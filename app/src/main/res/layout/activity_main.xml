@@ -1,18 +1,334 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrolllayout"
+            android:padding="15dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vector"
+                app:layout_constraintTop_toTopOf="@id/scrolllayout"
+                app:layout_constraintLeft_toLeftOf="@id/scrolllayout"
+                android:id="@+id/btnback"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/btnback"
+                app:layout_constraintLeft_toLeftOf="@id/scrolllayout"
+                android:fontFamily="@font/LatoBold"
+                android:layout_marginTop="35.98dp"
+                android:textFontWeight="900"
+                android:textSize="20dp"
+                android:text="@string/form"
+                android:textColor="@color/black"
+                android:id="@+id/form"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/form"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:src="@drawable/group_733"
+                android:layout_marginTop="15dp"
+                android:id="@+id/imginfo"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/imginfo"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/consjenis"
+                android:layout_marginTop="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jenis"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:id="@+id/jenis"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toRightOf="@id/jenis"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="@string/harus"
+                    android:textSize="12sp"
+                    android:textColor="@color/greenhaus"
+                    android:textStyle="bold"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/consjenis"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/radiogroup1">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rapid" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pcr"/>
+            </RadioGroup>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/radiogroup1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/constanggal"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tanggal"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:id="@+id/tanggal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toRightOf="@id/tanggal"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="@string/harus"
+                    android:textSize="12sp"
+                    android:textColor="@color/greenhaus"
+                    android:textStyle="bold"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/constanggal"
+                android:inputType="date"
+                android:hint="@string/pilih"
+                android:backgroundTint="@color/white"
+                android:id="@+id/edittanggal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nik"
+                app:layout_constraintTop_toBottomOf="@id/edittanggal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textColor="@color/black"
+                android:id="@+id/nik"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/nik"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:hint="@string/masuknik"
+                android:backgroundTint="@color/white"
+                android:id="@+id/editnik"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/editnik"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/consnama">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nama"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:id="@+id/nama"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toRightOf="@id/nama"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="@string/harus"
+                    android:textSize="12sp"
+                    android:textColor="@color/greenhaus"
+                    android:textStyle="bold"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/consnama"
+                android:backgroundTint="@color/white"
+                android:hint="@string/masuknama"
+                android:id="@+id/masuknama"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/masuknama"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/conslahir">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lahir"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:id="@+id/lahir"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toRightOf="@id/lahir"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="@string/harus"
+                    android:textSize="12sp"
+                    android:textColor="@color/greenhaus"
+                    android:textStyle="bold"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/conslahir"
+                android:inputType="date"
+                android:backgroundTint="@color/white"
+                android:hint="@string/pilih"
+                android:id="@+id/editlahir"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/editlahir"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/conskelamin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kelamin"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:id="@+id/kelamin"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toRightOf="@id/kelamin"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="@string/harus"
+                    android:textSize="12sp"
+                    android:textColor="@color/greenhaus"
+                    android:textStyle="bold"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/radiokelamin"
+                app:layout_constraintTop_toBottomOf="@id/conskelamin">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/laki"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/perempuan"/>
+            </RadioGroup>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/radiokelamin"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/conshubungan">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hubungan"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:id="@+id/hubungan"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toRightOf="@id/hubungan"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="@string/harus"
+                    android:textSize="12sp"
+                    android:textColor="@color/greenhaus"
+                    android:textStyle="bold"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/conshubungan"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/radiohubungan">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/orangtua"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sdani"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/anak"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kerabat"/>
+            </RadioGroup>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/radiohubungan"
+                android:text="@string/dengan"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textColor="@color/grey"
+                android:id="@+id/checkboxdengan"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/checkboxdengan"
+                android:text="@string/selanjutnya"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

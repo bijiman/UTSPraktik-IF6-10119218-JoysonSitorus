@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">UTSPraktik-IF6-10119218-JoysonSitorus</string>
+
+    <string name="form">Form Pengisian Data</string>
+    <string name="jenis">Jenis Test</string>
+    <string name="harus">•Harus Diisi</string>
+
+    <string name="rapid">Rapid Antigen</string>
+    <string name="pcr">PCR</string>
+
+    <string name="tanggal">Tanggal Terkonfirmasi</string>
+    <string name="pilih">Pilih Tanggal</string>
+    <string name="nik">NIK</string>
+    <string name="masuknik">Masukkan NIK</string>
+    <string name="nama">Nama</string>
+    <string name="lahir">Tanggal Lahir</string>
+    <string name="masuknama">Masukkan Nama</string>
+    <string name="kelamin">Jenis Kelamin</string>
+    <string name="laki">Laki - Laki</string>
+    <string name="perempuan">Perempuan</string>
+    <string name="hubungan">Hubungan Dengan Anda</string>
+    <string name="orangtua">Orang Tua</string>
+    <string name="sdani">Suami/Istri</string>
+    <string name="anak">Anak</string>
+    <string name="kerabat">Kerabat Lainnya</string>
+    <string name="dengan">Dengan ini saya menyetujui bahwa data yang saya isikan adalah benar.</string>
+    <string name="selanjutnya">Selanjutnya</string>
+
 </resources>
