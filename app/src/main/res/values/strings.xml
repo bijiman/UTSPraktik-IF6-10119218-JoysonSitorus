@@ -34,5 +34,8 @@
 
     <string name="cekhasil">Cek Hasil Tes</string>
     <string name="ubah">Ubah</string>
+    <string name="oke">Oke</string>
+    <string name="berhasil">Berhasil Mendapatkan Akses</string>
+    <string name="berhasil1">Silahkan tap tombol di bawah untuk memulai mengisi form Lapor Kesehatan Harian.</string>
 
 </resources>
