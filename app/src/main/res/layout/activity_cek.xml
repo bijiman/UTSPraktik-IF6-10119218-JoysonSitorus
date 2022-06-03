@@ -1,9 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CekActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/conscek"
+        android:padding="15dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnvector"
+            android:src="@drawable/vector"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            android:id="@+id/cek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cek"
+            app:layout_constraintTop_toBottomOf="@id/btnvector"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="@color/black"
+            android:fontFamily="@font/LatoBold"
+            android:textSize="20sp"
+            android:layout_marginTop="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/cek"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="15dp"
+            android:text="@string/jenis"
+            android:textColor="@color/neutralgray"
+            android:textStyle="bold"
+            android:id="@+id/jenis"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rapid"
+            app:layout_constraintTop_toBottomOf="@id/jenis"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="@color/neutralgray"
+            android:id="@+id/rapid"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/rapid"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="15dp"
+            android:text="@string/tanggal"
+            android:textColor="@color/neutralgray"
+            android:textStyle="bold"
+            android:id="@+id/tanggal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tanggal1"
+            app:layout_constraintTop_toBottomOf="@id/tanggal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="@color/neutralgray"
+            android:id="@+id/tanggal1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tanggal1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="15dp"
+            android:text="@string/nik"
+            android:textColor="@color/neutralgray"
+            android:textStyle="bold"
+            android:id="@+id/nik"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nik1"
+            app:layout_constraintTop_toBottomOf="@id/nik"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="@color/neutralgray"
+            android:id="@+id/nik1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/nik1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="15dp"
+            android:text="@string/nama"
+            android:textColor="@color/neutralgray"
+            android:textStyle="bold"
+            android:id="@+id/nama"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nama1"
+            app:layout_constraintTop_toBottomOf="@id/nama"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="@color/neutralgray"
+            android:id="@+id/nama1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/nama1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="15dp"
+            android:text="@string/lahir"
+            android:textColor="@color/neutralgray"
+            android:textStyle="bold"
+            android:id="@+id/lahir"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tanggallahir"
+            app:layout_constraintTop_toBottomOf="@id/lahir"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="@color/neutralgray"
+            android:id="@+id/tanggallahir"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tanggallahir"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="15dp"
+            android:text="@string/kelamin"
+            android:textColor="@color/neutralgray"
+            android:textStyle="bold"
+            android:id="@+id/kelamin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/laki"
+            app:layout_constraintTop_toBottomOf="@id/kelamin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="@color/neutralgray"
+            android:id="@+id/jeniskelamin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/jeniskelamin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="15dp"
+            android:text="@string/hubungan"
+            android:textColor="@color/neutralgray"
+            android:textStyle="bold"
+            android:id="@+id/hubungan"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/orangtua"
+            app:layout_constraintTop_toBottomOf="@id/hubungan"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="@color/neutralgray"
+            android:id="@+id/orangtua"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/orangtua"
+            android:layout_marginTop="50dp"
+            android:text="@string/cekhasil"
+            android:id="@+id/cekhasil"/>
+
+        <com.google.android.material.button.MaterialButton style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:strokeColor="@color/neutralgray"
+            android:text="@string/ubah"
+            app:layout_constraintTop_toBottomOf="@id/cekhasil"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/neutralgray"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

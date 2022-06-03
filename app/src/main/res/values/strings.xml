@@ -26,4 +26,13 @@
     <string name="dengan">Dengan ini saya menyetujui bahwa data yang saya isikan adalah benar.</string>
     <string name="selanjutnya">Selanjutnya</string>
 
+    <string name="cek">Cek Kembali Isian Data</string>
+    <string name="tanggal1">8 September 2021</string>
+    <string name="nik1">7323456778941234</string>
+    <string name="nama1">Mohammad Reksa</string>
+    <string name="tanggallahir">2 November 1993</string>
+
+    <string name="cekhasil">Cek Hasil Tes</string>
+    <string name="ubah">Ubah</string>
+
 </resources>

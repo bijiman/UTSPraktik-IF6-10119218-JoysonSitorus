@@ -252,15 +252,18 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:id="@+id/radiokelamin"
+                android:checkedButton="@id/pilihlaki"
                 app:layout_constraintTop_toBottomOf="@id/conskelamin">
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/laki"/>
+                    android:text="@string/laki"
+                    android:id="@+id/pilihlaki"/>
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/perempuan"/>
+                    android:text="@string/perempuan"
+                    android:id="@+id/pilihcewe"/>
             </RadioGroup>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -296,11 +299,13 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/conshubungan"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:id="@+id/radiohubungan">
+                android:id="@+id/radiohubungan"
+                android:checkedButton="@id/pilihorangtua">
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/orangtua"/>
+                    android:text="@string/orangtua"
+                    android:id="@+id/pilihorangtua"/>
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -322,7 +327,8 @@
                 android:text="@string/dengan"
                 app:layout_constraintLeft_toLeftOf="parent"
                 android:textColor="@color/grey"
-                android:id="@+id/checkboxdengan"/>
+                android:id="@+id/checkboxdengan"
+                android:checked="true"/>
 
             <com.google.android.material.button.MaterialButton
                 android:layout_width="match_parent"
