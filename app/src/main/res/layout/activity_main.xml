@@ -25,7 +25,6 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/btnback"
                 app:layout_constraintLeft_toLeftOf="@id/scrolllayout"
-                android:fontFamily="@font/LatoBold"
                 android:layout_marginTop="35.98dp"
                 android:textFontWeight="900"
                 android:textSize="20dp"

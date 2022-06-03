@@ -28,7 +28,6 @@
             app:layout_constraintTop_toBottomOf="@id/btnvector"
             app:layout_constraintLeft_toLeftOf="parent"
             android:textColor="@color/black"
-            android:fontFamily="@font/LatoBold"
             android:textSize="20sp"
             android:layout_marginTop="20sp"/>
 
